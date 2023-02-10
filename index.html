@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <lang="es">
+    <head>
+        <title>Página 100232</title>
+    </head>
+
+    <body background="carlos.jpg">
+        <h1>Alertas y notificaciones</h1>
+        <button>Botón que no hace nada</button><br><br>
+        <button onclick="accion_1()">BT1</button><br><br>
+        <button onclick="accion_2()">BT2</button><br><br>
+        <button onclick="accion_3()">BT3</button><br><br>
+
+        <h2>Dame tus datos👻👻👻</h2><br><br>
+        <p>Primer nombre: <input type="text" name="recibir texto 1" id="Tx_1"><br><br></p>
+        <p>Segundo nombre: <input type="text" name="recibir texto 2" id="Tx_2"><br><br></p>
+        <p>Primer apellido: <input type="text" name="recibir texto 3" id="Tx_3"><br><br></p>
+        <p>Segundo Apellido: <input type="text" name="recibir texto 4" id="Tx_4"><br><br></p>
+        
+        <button onclick="accion_4()" id="Bt4"> CONCATENAR NOMBRE COMPLETO</button><br><br>
+        Nombre Completo:&nbsp;<output id="Out1"> </output> y apellidos:&nbsp;<output id="Out2"> </output>
+
+        <style type="text/css">
+            /* Esto es un comentario en CSS*/
+            body{
+                background-image: url(carlos.jpg);
+                background-repeat: round;
+                color: rgba(25, 167, 120, 1)
+            }
+
+            h1{color: rgb(147, 44, 68);}
+            h2{color: rgb(33, 186, 89);}
+            p{color: rgb(188, 12, 233);}
+
+            #out1{color: rgba(255, 0, 255, 1);}
+            #out2{color: rgba(0, 255, 255, 1);}
+            #Bt4{color: rgb(19, 219, 69);}
+
+        </style>
+
+
+        <script type="text/javascript">
+            //esto es un comentario en javascript//
+            function accion_1(){
+                alert ("Boton 1 holaaaa 👻👻👻")
+            }
+
+            function accion_2(){
+                confirm("Boton 2 cahoooo👻👻👻")
+            }
+
+            function accion_3(){
+                alert("Accion del boton 3 👻👻👻"); confirm("Mensaje del boton 3 👻👻👻")
+            }
+
+            function accion_4(){
+                var NombreCompleto= document.getElementById("Tx_1").value+" "+
+                                    document.getElementById("Tx_2").value+" "+
+                                    document.getElementById("Tx_3").value+" "+
+                                    document.getElementById("Tx_4").value+" ";
+
+                alert("Su nombre completo es: "+ NombreCompleto)
+                document.getElementById("Our1").innerHTML=NombreCompleto
+            }
+
+        </script>
+
+    </body>
+</html>
